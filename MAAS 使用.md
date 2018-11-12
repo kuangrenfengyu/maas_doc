@@ -41,7 +41,7 @@ sudo maas init
 http://<your.maas.ip>:5240/MAAS/
 ```
 
-![第一次登陆初始化](C:\Users\zl\Documents\maas\Complete+first+user+configuration.jpg)
+![第一次登陆初始化](Complete+first+user+configuration.jpg)
 
 在此需要设置的选项主要有：
 
@@ -52,13 +52,13 @@ http://<your.maas.ip>:5240/MAAS/
 
 #### 设置 MAAS 网络
 
-![设置 subnets](C:\Users\zl\Documents\maas\Effortless+network+discovery+18.04.jpg)
+![设置 subnets](Effortless+network+discovery+18.04.jpg)
 
 在这里设置 MAAS 服务器需要管理的网络信息。
 
 #### 设置 DHCP
 
-![打开 DHCP](C:\Users\zl\Documents\maas\Turn+on+DHCP.jpg)
+![打开 DHCP](Turn+on+DHCP.jpg)
 
 这里的 DHCP 有两种模式，提供服务模式和客户端模式。
 
@@ -68,7 +68,7 @@ http://<your.maas.ip>:5240/MAAS/
 
 在 MAAS 接管服务器后，服务会出现在下面的列表中。状态一栏显示 NEW。
 
-![服务器列表](C:\Users\zl\Documents\maas\Deploy+at+the+press+of+a+button.jpg)
+![服务器列表](Deploy+at+the+press+of+a+button.jpg)
 
 #### 初始化服务器
 
