@@ -37,6 +37,8 @@ sudo maas init
 http://<your.maas.ip>:5240/MAAS/
 ```
 
+> 请注意，MAAS 默认的访问端口为 5240 ，请严格按照上面的地址输入，其实尖括号位置替换为你实际 MAAS 服务器上的地址。
+
 ![第一次登陆初始化](Complete+first+user+configuration.jpg)
 
 在此需要设置的选项主要有：
@@ -46,11 +48,16 @@ http://<your.maas.ip>:5240/MAAS/
 3. MAAS 需要下载的镜像选择。这里一般包含 Ubuntu 和 CentOS 两个系列。
 4. SSH keys
 
+> 请注意，此处的 SSH key 建议使用由 MAAS 服务器本身生成的 key.
+> 在获取镜像过程中，如果安装 Ubuntu 18.04 ，则镜像里的 Ubuntu 18.04 不能被去除。
+
 #### 设置 MAAS 网络
 
 ![设置 subnets](Effortless+network+discovery+18.04.jpg)
 
 在这里设置 MAAS 服务器需要管理的网络信息。
+
+这里的每个 Fabbic 对应一个实际的物理网卡的接口。
 
 #### 设置 DHCP
 
@@ -82,6 +89,6 @@ http://<your.maas.ip>:5240/MAAS/
 
 升级到软件仓库中的最新版本。一般这类问题可以解决。
 
-#### 无法 PXE 启动怎么办？
+### 服务器选择了网络引导，但是无法 PXE 启动怎么办？
 
 请进入主板的 BIOS 设置。检查系统的启动顺序，同时查看系统系否可以识别相关的网卡启动方式。
