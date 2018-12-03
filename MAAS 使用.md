@@ -1,13 +1,5 @@
 # MAAS 使用
 
-## 简介
-
-Metal as a Service
-
-Say hello to your physical cloud
-
-Complete automation of your physical servers for amazing data centre operational efficiency. On premises, open source and supported.
-
 ## 使用步骤
 
 ### 准备 MAAS 服务器
@@ -16,7 +8,11 @@ Complete automation of your physical servers for amazing data centre operational
 
 MAAS 的最新版本一般与 Ubuntu 的最新版本绑定。
 
+所以目前建议部署的操作系统为 Ubuntu 18.04
+
 #### 安装 MAAS
+
+一般没有特殊要求，我们会将 maas 的管理和控制器安装在同一节点上。安装步骤如下：
 
 ```shell
 sudo apt update
@@ -25,7 +21,7 @@ sudo apt install maas -y
 
 #### 初始化 MAAS
 
-创建初始用户
+安装结束后，需要创建初始用户才能开始使用
 
 ```shell
 sudo maas init
@@ -35,7 +31,7 @@ sudo maas init
 
 #### 第一次登陆设置
 
-访问 MAAS 地址为 
+访问 MAAS 地址为
 
 ```url
 http://<your.maas.ip>:5240/MAAS/
